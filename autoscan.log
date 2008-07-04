@@ -1,0 +1,84 @@
+autoscan: warning: missing AC_CHECK_FUNCS([dup2]) wanted by: 
+	daemon.c:64
+	daemon.c:65
+	daemon.c:66
+autoscan: warning: missing AC_CHECK_FUNCS([memchr]) wanted by: 
+	memqd.c:852
+autoscan: warning: missing AC_CHECK_FUNCS([memmove]) wanted by: 
+	memqd.c:882
+autoscan: warning: missing AC_CHECK_FUNCS([memset]) wanted by: 
+	slabs.c:149
+	memqd.c:1300
+	memqd.c:1663
+	items.c:276
+	assoc.c:138
+autoscan: warning: missing AC_CHECK_FUNCS([socket]) wanted by: 
+	memqd.c:1265
+autoscan: warning: missing AC_CHECK_HEADERS([arpa/inet.h]) wanted by: 
+	memqd.c:40
+autoscan: warning: missing AC_CHECK_HEADERS([fcntl.h]) wanted by: 
+	slabs.c:14
+	memqd.c:33
+	daemon.c:38
+	items.c:10
+	assoc.c:22
+autoscan: warning: missing AC_CHECK_HEADERS([malloc.h]) wanted by: 
+	memqd.c:47
+autoscan: warning: missing AC_CHECK_HEADERS([netinet/in.h]) wanted by: 
+	slabs.c:19
+	memqd.c:38
+	items.c:15
+	assoc.c:27
+autoscan: warning: missing AC_CHECK_HEADERS([sys/socket.h]) wanted by: 
+	slabs.c:11
+	memqd.c:23
+	items.c:7
+	assoc.c:19
+autoscan: warning: missing AC_CHECK_HEADERS([sys/time.h]) wanted by: 
+	slabs.c:10
+	memqd.c:22
+	items.c:6
+	assoc.c:18
+autoscan: warning: missing AC_FUNC_FORK wanted by: 
+	daemon.c:48
+autoscan: warning: missing AC_FUNC_MALLOC wanted by: 
+	slabs.c:146
+	slabs.c:172
+	slabs.c:229
+	memqd.c:117
+	memqd.c:128
+	memqd.c:135
+	memqd.c:136
+	memqd.c:137
+	memqd.c:417
+	memqd.c:1658
+	memqd.c:1695
+	items.c:222
+	items.c:265
+	items.c:266
+	assoc.c:133
+autoscan: warning: missing AC_FUNC_REALLOC wanted by: 
+	slabs.c:127
+	slabs.c:217
+	memqd.c:228
+	memqd.c:630
+	memqd.c:689
+	memqd.c:888
+autoscan: warning: missing AC_HEADER_TIME wanted by: 
+	memqd.c:1329
+autoscan: warning: missing AC_TYPE_PID_T wanted by: 
+	memqd.c:350
+	memqd.c:1455
+autoscan: warning: missing AC_TYPE_SIZE_T wanted by: 
+	slabs.c:52
+	slabs.c:53
+	slabs.c:55
+	slabs.c:70
+	slabs.c:158
+	slabs.c:198
+	memqd.c:1513
+	memqd.h:27
+	memqd.h:179
+	memqd.h:191
+	memqd.h:194
+	memqd.h:197
