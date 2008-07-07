@@ -311,16 +311,9 @@ void complete_nread(conn *c) {
         }
         
         if (old_it) {
-			old_it->tail->next = (struct _qitem * )qit;
-			
-			it->tail = qit;
-			it->head = old_it->head;
-
+            old_it->tail->next = (struct _qitem * )qit;
+			old_it->tail = qit;
 			memcpy(QITEM_data(qit), ITEM_data(it), it->nbytes);	
-			
-			it->nbytes = it->head->nbytes;
-			
-            item_replace(old_it, it);
         } else {
 			it->tail = it->head = qit;
 			memcpy(QITEM_data(qit), ITEM_data(it), it->nbytes);	 
