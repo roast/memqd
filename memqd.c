@@ -313,7 +313,16 @@ void complete_nread(conn *c) {
         if (old_it) {
             old_it->tail->next = (struct _qitem * )qit;
 			old_it->tail = qit;
+			
 			memcpy(QITEM_data(qit), ITEM_data(it), it->nbytes);	
+
+			/** if get the last qitem from the list **/
+			if (old_it->head == 0 )
+			{
+				old_it->head = qit;
+				old_it->nbytes = qit->nbytes;
+			}
+				
         } else {
 			it->tail = it->head = qit;
 			memcpy(QITEM_data(qit), ITEM_data(it), it->nbytes);	 
