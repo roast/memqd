@@ -311,7 +311,10 @@ void complete_nread(conn *c) {
         }
         
         if (old_it) {
-            old_it->tail->next = (struct _qitem * )qit;
+			/*- if there is no queue item at the queue -*/
+			if (old_it->head != 0 )
+            	old_it->tail->next = (struct _qitem * )qit;
+			
 			old_it->tail = qit;
 			
 			memcpy(QITEM_data(qit), ITEM_data(it), it->nbytes);	
@@ -639,7 +642,7 @@ void process_command(conn *c, char *command) {
         }
         c->icurr = c->ilist;
         c->ileft = i;
-        if (c->ileft) {
+        if (c->ileft && it->head != 0) {
             c->ipart = 0;
             c->state = conn_mwrite;
             c->ibytes = 0;
