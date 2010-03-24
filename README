@@ -8,29 +8,29 @@ It also use the memcache protocol(get/set/delete) to parse the request, so any m
 
 Here is a simple test with telnet command:
 
-    [root@php103 ~]# telnet 127.0.0.1 11212
-    Trying 127.0.0.1...
-    Connected to php103 (127.0.0.1).
-    Escape character is '^]'.
-    set queue 0 0 1
-    a
-    STORED
-    set queue 0 0 2
-    ab
-    STORED
-    set queue 0 0 3
-    abc
-    STORED
-    get queue
-    VALUE queue 0 1
-    a
-    END
-    get queue
-    VALUE queue 0 2
-    ab
-    END
-    get queue
-    VALUE queue 0 3
-    abc
-    END
+[root@php103 ~]# telnet 127.0.0.1 11212
+Trying 127.0.0.1...
+Connected to php103 (127.0.0.1).
+Escape character is '^]'.
+set queue 0 0 1
+a
+STORED
+set queue 0 0 2
+ab
+STORED
+set queue 0 0 3
+abc
+STORED
+get queue
+VALUE queue 0 1
+a
+END
+get queue
+VALUE queue 0 2
+ab
+END
+get queue
+VALUE queue 0 3
+abc
+END
 
